@@ -5,7 +5,7 @@ export const countContacts = async () => {
     const contacts = await readContacts();
     const countedContacts = contacts.length;
     console.log(`Total contacts: ${countedContacts}`);
-    return countContacts;
+    return countedContacts;
   } catch (error) {
     console.error('Error counting contacts:', error);
   }
